@@ -1,0 +1,27 @@
+<html>
+<head>
+    
+    <title>Autimos</title>
+</head>
+<body>
+
+   
+    <img src="81.jpg" id="img" style="cursor:pointer;">
+
+    
+    <audio id="audio">
+        <source src="Manuel.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+   
+    <script>
+        document.getElementById("img").onclick = () => {
+            const audio = document.getElementById("audio");
+            audio.currentTime = 0; // Reinicia el audio desde el principio
+            audio.play(); // Reproduce el audio
+        };
+    </script>
+
+</body>
+</html>
